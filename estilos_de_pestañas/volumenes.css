@@ -1,0 +1,138 @@
+/* Estilos generales del body */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del header */
+header {
+    background-image: url(../images/img1aiop1.png); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-content {
+    /* Asegura que el contenido esté sobre la imagen de fondo */
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.5
+    ); /* Fondo semi-transparente para mejorar la legibilidad */
+}
+
+header h1 {
+    margin: 0;
+    display: inline-block;
+}
+
+header nav {
+    display: inline-block;
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Estilos para el menú de navegación */
+
+main {
+    padding: 20px 0; /* Espacio entre el menú y el contenido principal */
+}
+
+/* Estilos para la sección de volúmenes */
+#volumenes h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.volumen-container {
+    display: flex; /* Para alinear información e imagen */
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd; /* Un borde sutil para cada volumen */
+    border-radius: 5px;
+    align-items: center; /* Centrar verticalmente los elementos */
+}
+
+.volumen-info {
+    flex-grow: 1;
+    padding-right: 20px;
+}
+
+.volumen-info h3 {
+    margin-top: 0;
+}
+
+.volumen-info p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.volumen-info a {
+    display: inline-block;
+    background-color: #007bff; /* Un color distintivo para el enlace */
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.volumen-info a:hover {
+    background-color: #0056b3;
+}
+
+.volumen-imagen {
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+/* Estilo para las miniaturas de los volúmenes - replicando el tamaño de las portadas */
+.volumen-imagen img.miniatura {
+    max-width: 200px; /* El mismo ancho máximo que las portadas en index.html */
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Centrar la imagen */
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+/* estilos del footer */
+footer {
+    background-color: #aeabe6;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.8em;
+    color: black;
+    margin-top: 20px; /* Añade un poco de espacio superior */
+}

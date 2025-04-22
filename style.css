@@ -109,3 +109,34 @@ footer {
     font-size: 0.8em;
     color: black;
 }
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* Estilos para la sección de métricas */
+#metricas {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.indicadores-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.indicador {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.valor-indicador {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff; /* Un color llamativo */
+    display: block;
+    margin-top: 5px;
+}

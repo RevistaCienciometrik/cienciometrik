@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Bitácora - Revista Cienciometrik</title>
+    <link rel="stylesheet" href="../estilos_de_pestañas/bitacoras.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>Revista Cienciometrik</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="volumenes.html">Volúmenes</a></li>
+                    <li><a href="semilleros.html">Semilleros</a></li>
+                    <li><a href="bitacoras.html" class="active">Bitácoras</a></li>
+                    <li><a href="simposio.html">Simposio</a></li>
+                    <li><a href="envios.html">Envíos</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="form-container">
+            <h2>Subir Bitácora Semanal</h2>
+            <form action="../subir_bitacora.php" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="nombre_alumno">Nombre del Estudiante:</label>
+                    <input type="text" id="nombre_alumno" name="nombre_alumno" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="programa_formacion">Programa de Formación:</label>
+                    <input type="text" id="programa_formacion" name="programa_formacion" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cc_estudiante">C.C del Estudiante:</label>
+                    <input type="text" id="cc_estudiante" name="cc_estudiante" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ficha">Ficha:</label>
+                    <input type="text" id="ficha" name="ficha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo_estudiante">Correo del Estudiante:</label>
+                    <input type="email" id="correo_estudiante" name="correo_estudiante" required>
+                </div>
+
+                <div class="form-group date-range">
+                    <label>Fecha de la Bitácora:</label>
+                    <div class="date-inputs">
+                        <label for="fecha_inicio">Desde:</label>
+                        <input type="date" id="fecha_inicio" name="fecha_inicio">
+                        <label for="fecha_fin">Hasta:</label>
+                        <input type="date" id="fecha_fin" name="fecha_fin">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="archivo_bitacora">Seleccionar Archivo (PDF, DOC, DOCX):</label>
+                    <input type="file" id="archivo_bitacora" name="archivo_bitacora" accept=".pdf,.doc,.docx" required>
+                </div>
+
+                <button type="submit" class="submit-button">Enviar Bitácora</button>
+            </form>
+        </div>
+
+        <!-- <div id="mensaje-subida">
+            <?php
+                if (isset($_GET['mensaje']) && isset($_GET['clase'])) {
+                    echo '<div class="' . htmlspecialchars($_GET['clase']) . '">' . htmlspecialchars($_GET['mensaje']) . '</div>';
+                }
+            ?>
+        </div> -->
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Revista Cienciometrik. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

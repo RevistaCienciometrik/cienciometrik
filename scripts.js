@@ -15,31 +15,43 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // CONTADOR DE VISITAS
     
-document.addEventListener('DOMContentLoaded', function() {
-
-    let visitas = localStorage.getItem('visitasCienciometrik');
-
-    if (visitas) {
-        visitas = parseInt(visitas) + 1;
-    } else {
-        visitas = 1;
-    }
-
-    localStorage.setItem('visitasCienciometrik', visitas);
-    const visitasElement = document.getElementById('total-visitas');
-    if (visitasElement) {
-        visitasElement.textContent = visitas;
-    }
-
-    // Lógica para el botón de reseteeo de las visitas:
-    const resetButton = document.getElementById('reset-visitas');
-    if (resetButton) {
-        resetButton.addEventListener('click', function() {
-            localStorage.removeItem('visitasCienciometrik');
-            if (visitasElement) {
-                visitasElement.textContent = 0; // O 'Cargando...' si quieres simular una nueva carga
+    document.addEventListener('DOMContentLoaded', function() {
+        // CONTADOR DE VISITAS
+        let visitas = localStorage.getItem('visitasCienciometrik');
+        const visitasElement = document.getElementById('total-visitas');
+    
+        if (visitas) {
+            visitas = parseInt(visitas) + 1;
+        } else {
+            visitas = 1;
+        }
+    
+        localStorage.setItem('visitasCienciometrik', visitas);
+        if (visitasElement) {
+            visitasElement.textContent = visitas;
+        }
+    
+        // Lógica para el botón de resetear visitas
+        const resetButton = document.getElementById('reset-visitas');
+        if (resetButton) {
+            resetButton.addEventListener('click', function() {
+                localStorage.removeItem('visitasCienciometrik');
+                if (visitasElement) {
+                    visitasElement.textContent = 0;
+                }
+            });
+        }
+    
+        // --------------------- MEDICIÓN DEL TIEMPO DE CARGA ---------------------
+        const tiempoCargaElement = document.getElementById('tiempo-carga');
+        const tiempoInicio = performance.now(); // Marca el tiempo al inicio de la carga
+    
+        window.addEventListener('load', function() {
+            const tiempoFin = performance.now(); // Marca el tiempo al final de la carga
+            const tiempoTotal = (tiempoFin - tiempoInicio).toFixed(2); // Calcula la diferencia en milisegundos y lo formatea a 2 decimales
+    
+            if (tiempoCargaElement) {
+                tiempoCargaElement.textContent = `${tiempoTotal} ms`; // Muestra el tiempo en milisegundos
             }
         });
-    }
-});
-// ----------------------------------------------------------------------------------------
+    });

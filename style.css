@@ -23,7 +23,7 @@ header {
 }
 
 .header-content {
-    /* Asegura que el contenido esté sobre la imagen de fondo */
+    /* Aseguramos que el contenido esté sobre la imagen de fondo */
     background-color: rgba(
         0,
         0,
@@ -73,12 +73,10 @@ main {
 
 /* Estilos para la sección de bienvenida en index.html */
 #inicio {
-    text-align: center; /* Centra el contenido de la sección */
+    text-align: center; /* Centrando el contenido de la sección */
 }
 
-#inicio p {
-    /* text-align: center;  Esto ya no es necesario, lo hacemos en #inicio */
-}
+
 
 /* ------------------------------------------------------------------------------------------------- */
 
@@ -113,6 +111,7 @@ footer {
 /* ------------------------------------------------------------------------------------------------- */
 
 /* Estilos para la sección de métricas */
+
 #metricas {
     padding: 20px 0;
     text-align: center;

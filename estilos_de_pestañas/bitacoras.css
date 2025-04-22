@@ -1,6 +1,6 @@
 /* bitacoras.css */
 
-/* Estilos generales del body (por si acaso no están en style.css) */
+/* Estilos generales del body: NO SE ENLAZA A STYLES.CSS PORQUE TIENE SU PROPIO CSS */
 body {
     font-family: sans-serif;
     margin: 0;
@@ -62,7 +62,7 @@ header nav ul li a:hover {
 }
 
 /* ----------------------------------------------------------------------------- */
-/* Estilos específicos para la página bitacoras.html */
+/* Estilos para la página bitacoras.html */
 
 /* Contenedor principal del formulario */
 .form-container {
@@ -80,7 +80,7 @@ header nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-/* Estilos para cada grupo de campo (label + input) */
+/* Estilos para cada grupo de campo */
 .form-group {
     margin-bottom: 25px; /* Aumentar el espacio entre los campos */
 }
@@ -105,7 +105,7 @@ header nav ul li a:hover {
     font-size: 16px;
 }
 
-/* Estilos específicos para el rango de fechas */
+/* Estilos para el rango de fechas */
 .form-group.date-range label {
     display: block;
     margin-bottom: 8px;

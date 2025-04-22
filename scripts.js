@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         visitasElement.textContent = visitas;
     }
 
-    // Lógica para el botón de resetear
+    // Lógica para el botón de reseteeo de las visitas:
     const resetButton = document.getElementById('reset-visitas');
     if (resetButton) {
         resetButton.addEventListener('click', function() {

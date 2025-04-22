@@ -78,9 +78,6 @@ main {
     text-align: center; /* Centra el contenido de la sección */
 }
 
-#inicio p {
-    /* text-align: center;  Esto ya no es necesario, lo hacemos en #inicio */
-}
 
 /* ------------------------------------------------------------------------------------------------- */
 

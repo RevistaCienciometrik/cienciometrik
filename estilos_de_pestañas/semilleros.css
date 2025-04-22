@@ -1,0 +1,170 @@
+/* Todo el contenido está editando con comentarios para asegurar la lectura del código y asímismo,
+para asegurar futuros cambios en sus funcionalidades, contenidos y estilos. */
+/* Estilos generales del body */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del header */
+header {
+    background-image: url(../images/img1aiop1.png); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-content {
+    /* Asegura que el contenido esté sobre la imagen de fondo */
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.5
+    ); /* Fondo semi-transparente para mejorar la legibilidad */
+}
+
+header h1 {
+    margin: 0;
+    display: inline-block;
+}
+
+header nav {
+    display: inline-block;
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Estilos para el menú de navegación */
+
+main {
+    padding: 20px 0; /* Espacio entre el menú y el contenido principal */
+}
+
+/* Estilos para la sección de bienvenida en index.html */
+#inicio {
+    text-align: center; /* Centra el contenido de la sección */
+}
+
+#inicio p {
+    /* text-align: center;  Esto ya no es necesario, lo hacemos en #inicio */
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* Estilos para las portadas de los volúmenes */
+.numeros .numero img.portada-volumen {
+    max-width:200px; /* Ajustar este valor para cambiar el tamaño de las imágenes en la portada */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+.portada-semillero {
+    max-width: 350px; /* O el tamaño que prefieras */
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Para centrar la imagen */
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+/* estilos del footer */
+footer {
+    background-color: #aeabe6;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.8em;
+    color: black;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+/* Semilleros Styles */
+
+#semilleros {
+    text-align: center;
+}
+
+.semillero-descripcion {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.semilleros-lista {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.semilleros-lista h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #007bff; /* Added color to match the semillero-item title */
+}
+
+.semillero-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.semillero-item h4 {
+    margin-top: 0;
+    color: #007bff; /* Color for the semillero title */
+}
+
+.semillero-unete {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.unete-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.unete-link:hover {
+    background-color: #218838;
+}

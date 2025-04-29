@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-image: url(images/img1aiop1.png); /* Ruta a la imagen */
+    background-image: url(../images/img1aiop1.png); /* Ruta a la imagen del header */
     background-size: cover; /* Cubre todo el header */
     background-position: center; /* Centra la imagen */
     color: #fff;
@@ -77,27 +77,6 @@ main {
 }
 
 
-
-/* ------------------------------------------------------------------------------------------------- */
-
-/* Estilos para las portadas de los volúmenes */
-.numeros .numero img.portada-volumen {
-    max-width:200px; /* Ajustar este valor para cambiar el tamaño de las imágenes en la portada */
-    height: auto;
-    display: block;
-    margin: 10px auto;
-}
-
-/* ------------------------------------------------------------------------------------------------- */
-
-/* Estilos para la imagen del semillero */
-.imagen-semillero {
-    display: block;         /* Asegura que la imagen sea un bloque */
-    margin: 10px auto;      /* Centra la imagen horizontalmente y agrega espacio arriba y abajo */
-    max-width: 50%;         /* La imagen no debe ser más ancha que su contenedor - ajustado para ser más pequeño */
-    height: auto;            /* Mantiene la proporción de la imagen */
-}
-
 /* ------------------------------------------------------------------------------------------------- */
 /* estilos del footer */
 footer {
@@ -109,3 +88,60 @@ footer {
 }
 
 /* ------------------------------------------------------------------------------------------------- */
+
+/* Estilos para la sección de métricas */
+
+#metricas {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.indicadores-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.indicador {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.valor-indicador {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff; /* Un color llamativo */
+    display: block;
+    margin-top: 5px;
+}
+
+/* Estilos para la sección de introducción de métricas */
+#introduccion-metricas {
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 2em; /* Añade un espacio alrededor del contenido */
+    margin: 2em auto; /* Añade margen arriba y abajo, y centra la sección horizontalmente */
+    max-width: 800px; /* Establece un ancho máximo para que no se vea demasiado ancho en pantallas grandes */
+    background-color: #f9f9f9; /* Un color de fondo suave */
+    border-radius: 8px; /* Bordes redondeados para un aspecto más suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Una sombra sutil para darle profundidad */
+}
+
+#introduccion-metricas h2 {
+    color: #333; /* Color del título */
+    margin-bottom: 1em; /* Espacio debajo del título */
+    font-size: 2em; /* Tamaño de la fuente del título */
+}
+
+#introduccion-metricas p {
+    color: #555; /* Color del texto del párrafo */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+    margin-bottom: 1em; /* Espacio entre párrafos */
+}
+
+#introduccion-metricas strong {
+    color: #007bff; /* Un color destacado para las palabras importantes */
+}

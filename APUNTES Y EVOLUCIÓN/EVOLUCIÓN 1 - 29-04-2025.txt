@@ -1,0 +1,29 @@
+- Logo
+- Cambiar diseño a horizontal (pedagógico: didáctico)
+- Acerca de: historia de la revista (convocatorias),  linea del tiempo, enfoque de la revista. Líneas que recibe la revista. Comité editorial, comité científico. Información para autores (plantilla para enviar resúmenes ampliados, informes de vigilancia tecnológica y póster´s: al postular con información del postulador - aprendiz con un formulario-.)
+- incio: convocatoria actual, último volumen publicado.
+líneas de inv de la revista, contacto.
+¿Quiénes somos?
+
+volúmenes: publicaciones: resúmenes ampliados y poster o ivt
+
+Bitácoras: no
+
+Métricas: artículos: resúmenes ampliados
+métricas alternativas (dedito arriba, descargas, compart)
+Hablar con Excel IA Métrica (desde Google scholar, las métricas, ejemplo métricas del año 2024, 25...)
+
+Simposio: hablar con las chicas del simposio
+
+Semillero: presentación del semillero
+---¿colectivo de investigación?
+listado con los datos de los investigadores.
+
+Envíos: Lista de chequeo, formatos de confidencialidad, formatos de autores, 
+
+Backend: Cotizar backend. Requerimientos del backend.
+
+Marcela: Crear redes sociales para la revista
+Crear video ia para la revista (1er video de ejemplo para usarlo en la wen)
+
+Wilson: Carpeta en drive para subir logos e imágenes.
